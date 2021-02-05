@@ -62,7 +62,7 @@ namespace SITConnect
         {
             int scores = checkPassword(tb_pwd.Text);
             string status = "";
-            if (!Regex.IsMatch(tb_email.Text.Trim(), @"^\w+([-+.']\w+)@\w+([-.]\w+).\w+([-.]\w+)*$"))
+            if (!Regex.IsMatch(tb_email.Text.Trim(),  @"^[a-zA-Z0-9]{8}$"))
             {
                 lbl_emailcheck.Text = "Invalid Email Format";
             }
